@@ -27,7 +27,11 @@ export const Counter = () => {
         placeholder="Type or paste your text"
         data-testid="textArea"
       ></textarea>
-      <button onClick={handleButton} disabled={charLength ? "" : "disabled"}>
+      <button
+        data-testid="clearBtn"
+        onClick={handleButton}
+        disabled={charLength ? "" : "disabled"}
+      >
         Clear
       </button>
 
